@@ -13,25 +13,35 @@
       <pubDate>Mon, 07 Sep 2020 10:58:08 -0400</pubDate>
       
       <guid>https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-1/</guid>
-      <description>From the Exploratory Data Analysis that was carried out, I was able to generate insight about the data. I can conclude that the Loan Status is heavily dependent on Credit History for predictions. The model also shows how each features relates to the target. Also, from the evaluation i conducted, it can be seen that of all the models employed for the analysis, Logistic Regression Algorithm(LRA) performed far better(83%) than others.</description>
+      <description>Dream Housing Finance company deals in all home loans. The company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form. Certain details were provided. To automate this process, they have given a problem to identify the customers segments, those that are eligible for loan amount so that they can specifically target these customers.
+From the Exploratory Data Analysis that was performed, I was able to generate insight about the data. The model shows how each features relates to the target. Furthermore, from the evaluation I conducted, it can be seen that of all the models employed for the analysis, Logistic Regression Algorithm(LRA) performed far better(83%) than others. Random Forest Classifier(RFC) did better than Decision Tree Classifier(DTC). Support Vector Machine(SVM) also did bettter than K-Nearest Neighbors(KNN).</description>
     </item>
     
     <item>
-      <title>Project 2: Breast Cancer Analysis and Prediction</title>
+      <title>Project 2:Hotel Booking Demand Prediction</title>
       <link>https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-2/</link>
-      <pubDate>Sat, 15 Aug 2020 11:00:59 -0400</pubDate>
+      <pubDate>Sat, 10 Nov 2020 11:00:59 -0400</pubDate>
       
       <guid>https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-2/</guid>
-      <description>The data for this analysis was gotten from Wisconsin(diagnostic) Breast Cancer dataset. The problem at hand was to discover the possibility of detecting cancer at an early stage, based on features collected from the patient.To also analyse the data and build a model that would detect cancerous cells with good accuracy. Using basic clasification models, i was conclude that the model that does the best on the Testing data is the Random Forest Classifier.</description>
+      <description>The dataset for this project contains booking information for a City hotel and a Resort hotel.
+By utilizing the predictive model for this project, hotels will be able to identify the reasons and proffer answers to these questions. Furthermore, this analysis will help hotels get prepared with adequate and timely arrangements on heavy and low tourist visits period.
+Using exploratory data analysis, I was able to visualize the different prospective, which gave me different insights into: Which are the busiest months? How many bookings were cancelled? etc.
+From the summary table presented on this project, I observe through using various classification model that Random Forest algorithm was the best algorithm for this project analysis. I also presented that bookings got cancelled 37% of the time. While booking guest checked-in (did not cancel the bookings) almost 63% of the time.</description>
     </item>
     
     <item>
-      <title>Project 2: Titanic Dataset</title>
+      <title>Project 2: Lagos Rent Prediction Web Application</title>
       <link>https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-3/</link>
-      <pubDate>Sat, 25 Jul 2020 11:13:32 -0400</pubDate>
+      <pubDate>Sat, 09 February 2021 11:13:32 -0400</pubDate>
       
       <guid>https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-3/</guid>
-      <description>The data for this analysis was obtained from the Titanic Dataset Science Solutions on Kaggle Website. The problem at hand was to predict the likelihood of survival. The survey was restricted to just gender and passenger class. From the exploratory data analysis of Titanic dataset, I concluded that Women had higher chances of survival. I also compared fare across different classes and found that it varied a lot for class 1 passengers.</description>
+      <description>The data for this project was source from PropertyPro and NigeriaPropertyCentre websites. After webscrapping was performed to generate the required data. We cleaned the data before Exploratory Data Analysis (EDA) was further conducted using python plotting libraries like Matplotlib, NumPy, and Pandas.
+CatBoost Regressor algorithm was used as the regression model, and the results gotten from the model are:
+Learn {R2: 0.68, RMSE: 0.60}
+Validation {R2: 0.76, RMSE: 0.49}
+
+With the model concluded, an API was created using FastAPI to allow the software teams integrate the model.
+</description>
     </item>
     
     <item>
@@ -40,7 +50,8 @@
       <pubDate>Tue, 09 Jun 2020 11:14:48 -0400</pubDate>
       
       <guid>https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-4/</guid>
-      <description>The data for this analysis was obtained from the UCI Machine Learning Repository. It was a Team project. After evaluation of the performance of the algorithm and testing with the four different models deployed for the analysis, The following conclusion was made; Random forest classification gave the best and least RMSE value of 0.62. This means that, averagely, an error of + or - 0.62 could be obtained from our prediction.</description>
+      <description>Each wine in this dataset is given a "quality" score between 3 and 8. It was a team project. After evaluation of the performance of the algorithm and testing with four different classification models deployed for the analysis. The following conclusion was made: Random forest classification gave the best and least RMSE value of 0.62. This means that, averagely, an error of + or - 0.62 could be obtained from our prediction.
+</description>
     </item>
     
   </channel>
