@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Moses Akwa — Data Scientist and Operations Professional</title>
+  <meta name="description" content="Moses Akwa — Data Scientist and Operations Professional focused on turning data into insights, predictive models and practical digital solutions.">
+  <meta name="author" content="Moses Akwa">
+  <meta name="theme-color" content="#0b0d0f">
+
+  <meta property="og:title" content="Moses Akwa — Data Scientist and Operations Professional">
+  <meta property="og:description" content="Turning data into insights, decisions and useful digital solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mosesjnr.github.io/Moses-Akwa-portfolio/">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace']
+          },
+          colors: {
+            ink: '#0b0d0f',
+            paper: '#f5f5f2',
+            accent: '#d8ff3e',
+            muted: '#9da3aa'
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(0,0,0,.28)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { color-scheme: dark; }
+    html { background:#0b0d0f; }
+    body { background:#0b0d0f; color:#f5f5f2; }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 44px 44px;
+    }
+    .noise {
+      background-image: radial-gradient(rgba(255,255,255,.07) .7px, transparent .7px);
+      background-size: 7px 7px;
+      opacity:.12;
+      pointer-events:none;
+    }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .project-image { transition:transform .7s cubic-bezier(.2,.8,.2,1), filter .5s ease; }
+    .project-card:hover .project-image { transform:scale(1.035); filter:saturate(1.12); }
+    .nav-scrolled { background:rgba(11,13,15,.88)!important; box-shadow:0 10px 35px rgba(0,0,0,.18); }
+    .focus-ring:focus-visible { outline:2px solid #d8ff3e; outline-offset:4px; }
+  </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-accent selection:text-ink">
+  <div class="fixed inset-0 noise z-[-1]"></div>
+
+  <!-- NAVIGATION -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-ink/65 backdrop-blur-xl transition-all">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+      <a href="#top" class="focus-ring text-sm sm:text-base font-semibold tracking-tight">
+        Moses Akwa<span class="text-accent">.</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-7 text-sm text-muted">
+        <a class="focus-ring hover:text-white transition" href="#work">Work</a>
+        <a class="focus-ring hover:text-white transition" href="#about">About</a>
+        <a class="focus-ring hover:text-white transition" href="#capabilities">Capabilities</a>
+        <a class="focus-ring hover:text-white transition" href="#process">Process</a>
+        <a class="focus-ring hover:text-white transition" href="#contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="Moses_Akwa_Resume.pdf"
+           target="_blank" rel="noopener noreferrer"
+           class="focus-ring hidden sm:inline-flex px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs font-semibold hover:bg-white/10 transition">
+          View CV ↗
+        </a>
+        <a href="#contact" class="focus-ring inline-flex px-4 py-2 rounded-full bg-accent text-ink text-xs font-bold hover:brightness-95 transition">
+          Let's Talk
+        </a>
+        <button id="menuBtn" aria-label="Open menu" aria-expanded="false"
+                class="md:hidden focus-ring w-9 h-9 rounded-full border border-white/10 text-white">
+          <span class="text-lg">☰</span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/5 bg-ink/95 px-5 py-4">
+      <div class="flex flex-col gap-4 text-sm text-muted">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a href="Moses_Akwa_Resume.pdf" target="_blank" rel="noopener noreferrer">View CV ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="relative min-h-screen grid-bg overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-32 sm:pt-40 pb-20">
+        <div class="max-w-5xl">
+          <div class="reveal inline-flex items-center gap-2 border border-white/10 bg-white/[.035] rounded-full px-3.5 py-2 text-[11px] font-mono uppercase tracking-[.16em] text-muted">
+            <span class="w-2 h-2 rounded-full bg-accent"></span>
+            Data • Analytics • Operations • Digital Solutions
+          </div>
+
+          <h1 class="reveal mt-8 text-[clamp(3rem,8vw,7.8rem)] leading-[.9] font-semibold tracking-[-.065em] max-w-6xl">
+            Data Scientist<br>
+            <span class="text-muted">&amp; Operations</span><br>
+            Professional<span class="text-accent">.</span>
+          </h1>
+
+          <div class="mt-9 grid lg:grid-cols-12 gap-8 items-end">
+            <p class="reveal lg:col-span-7 text-lg sm:text-xl text-muted leading-relaxed max-w-2xl">
+              I turn raw data into useful insights, predictive models and practical solutions that help people understand problems, make better decisions and improve how work gets done.
+            </p>
+
+            <div class="reveal lg:col-span-5 flex flex-wrap gap-3 lg:justify-end">
+              <a href="#work" class="focus-ring inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-accent text-ink font-bold text-sm hover:brightness-95 transition">
+                Explore My Work ↓
+              </a>
+              <a href="https://github.com/mosesjnr" target="_blank" rel="noopener noreferrer"
+                 class="focus-ring inline-flex items-center justify-center px-6 py-3.5 rounded-full border border-white/10 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 transition">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20 pt-5 border-t border-white/10 flex flex-wrap gap-x-7 gap-y-3 text-[11px] font-mono uppercase tracking-[.16em] text-muted">
+          <span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span>
+          <span>Matplotlib</span><span>Machine Learning</span><span>FastAPI</span>
+          <span>React</span><span>Next.js</span><span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="absolute -right-24 top-36 w-80 h-80 rounded-full bg-accent/10 blur-3xl pointer-events-none"></div>
+    </section>
+
+    <!-- POSITIONING / STATS -->
+    <section class="border-y border-white/10 bg-white/[.02]">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="reveal">
+          <div class="text-3xl font-semibold">04</div>
+          <div class="mt-1 text-xs uppercase tracking-widest text-muted">Featured data projects</div>
+        </div>
+        <div class="reveal">
+          <div class="text-3xl font-semibold">03</div>
+          <div class="mt-1 text-xs uppercase tracking-widest text-muted">Digital product projects</div>
+        </div>
+        <div class="reveal">
+          <div class="text-3xl font-semibold">Python</div>
+          <div class="mt-1 text-xs uppercase tracking-widest text-muted">Core analytics language</div>
+        </div>
+        <div class="reveal">
+          <div class="text-3xl font-semibold">End-to-end</div>
+          <div class="mt-1 text-xs uppercase tracking-widest text-muted">Problem → insight → solution</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="max-w-7xl mx-auto px-5 sm:px-8 py-24 sm:py-32">
+      <div class="reveal max-w-2xl">
+        <div class="text-xs font-mono uppercase tracking-[.18em] text-accent">Selected work</div>
+        <h2 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight">Data projects with a decision-making focus.</h2>
+        <p class="mt-5 text-muted leading-relaxed">
+          A selection of analytical and predictive projects from my portfolio, presented around the question being solved, the method used and the resulting insight.
+        </p>
+      </div>
+
+      <div class="mt-14 grid lg:grid-cols-2 gap-7">
+
+        <!-- Loan -->
+        <article class="reveal project-card group border border-white/10 bg-white/[.025] rounded-3xl overflow-hidden hover:border-accent/40 transition">
+          <div class="aspect-[16/9] overflow-hidden bg-neutral-900">
+            <img class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85"
+                 alt="Loan prediction correlation matrix" loading="lazy">
+          </div>
+          <div class="p-7 sm:p-8">
+            <div class="flex items-center justify-between gap-4 text-[11px] font-mono uppercase tracking-widest text-muted">
+              <span>01 / Predictive analytics</span><span>2020</span>
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold">Loan Prediction</h3>
+            <p class="mt-3 text-muted leading-relaxed">
+              Built an analysis to identify customer segments likely to be eligible for loan amounts. Exploratory analysis examined feature relationships and model performance.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Python</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">EDA</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Classification</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Logistic Regression</span>
+            </div>
+            <div class="mt-7 flex gap-5 text-sm font-semibold">
+              <a class="focus-ring text-accent hover:underline" href="https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-1/" target="_blank" rel="noopener noreferrer">Case study ↗</a>
+              <a class="focus-ring text-muted hover:text-white" href="https://github.com/mosesjnr" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel -->
+        <article class="reveal project-card group border border-white/10 bg-white/[.025] rounded-3xl overflow-hidden hover:border-accent/40 transition">
+          <div class="aspect-[16/9] overflow-hidden bg-neutral-900">
+            <img class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=85"
+                 alt="Hotel booking cancellation analysis" loading="lazy">
+          </div>
+          <div class="p-7 sm:p-8">
+            <div class="flex items-center justify-between gap-4 text-[11px] font-mono uppercase tracking-widest text-muted">
+              <span>02 / Predictive analytics</span><span>2020</span>
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold">Hotel Booking Demand Prediction</h3>
+            <p class="mt-3 text-muted leading-relaxed">
+              Analysed hotel booking data to understand cancellation behaviour, busy periods and operational planning needs. Random Forest performed best among the evaluated classification models.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Python</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">EDA</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Classification</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Random Forest</span>
+            </div>
+            <div class="mt-7 flex gap-5 text-sm font-semibold">
+              <a class="focus-ring text-accent hover:underline" href="https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-2/" target="_blank" rel="noopener noreferrer">Case study ↗</a>
+              <a class="focus-ring text-muted hover:text-white" href="https://github.com/mosesjnr" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lagos Rent -->
+        <article class="reveal project-card group border border-white/10 bg-white/[.025] rounded-3xl overflow-hidden hover:border-accent/40 transition">
+          <div class="aspect-[16/9] overflow-hidden bg-neutral-900">
+            <img class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=85"
+                 alt="Lagos rent prediction web application" loading="lazy">
+          </div>
+          <div class="p-7 sm:p-8">
+            <div class="flex items-center justify-between gap-4 text-[11px] font-mono uppercase tracking-widest text-muted">
+              <span>03 / Applied machine learning</span><span>2021</span>
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold">Lagos Rent Prediction Web Application</h3>
+            <p class="mt-3 text-muted leading-relaxed">
+              Collected property data, cleaned and explored it, trained a regression model and exposed the model through an API so a software team could integrate the prediction capability into an application.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Python</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Pandas</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">CatBoost</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">FastAPI</span>
+            </div>
+            <div class="mt-7 flex gap-5 text-sm font-semibold">
+              <a class="focus-ring text-accent hover:underline" href="https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-3/" target="_blank" rel="noopener noreferrer">Case study ↗</a>
+              <a class="focus-ring text-muted hover:text-white" href="https://github.com/mosesjnr" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Wine -->
+        <article class="reveal project-card group border border-white/10 bg-white/[.025] rounded-3xl overflow-hidden hover:border-accent/40 transition">
+          <div class="aspect-[16/9] overflow-hidden bg-neutral-900">
+            <img class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85"
+                 alt="Wine quality feature analysis chart" loading="lazy">
+          </div>
+          <div class="p-7 sm:p-8">
+            <div class="flex items-center justify-between gap-4 text-[11px] font-mono uppercase tracking-widest text-muted">
+              <span>04 / Classification</span><span>2020</span>
+            </div>
+            <h3 class="mt-4 text-2xl font-semibold">Wine Quality Prediction</h3>
+            <p class="mt-3 text-muted leading-relaxed">
+              A team-based exploratory, descriptive and predictive analysis using wine quality scores to investigate whether a red wine could be classified as good quality.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs">
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Python</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">EDA</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Classification</span>
+              <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Random Forest</span>
+            </div>
+            <div class="mt-7 flex gap-5 text-sm font-semibold">
+              <a class="focus-ring text-accent hover:underline" href="https://mosesjnr.github.io/Moses-Akwa-portfolio/post/project-4/" target="_blank" rel="noopener noreferrer">Case study ↗</a>
+              <a class="focus-ring text-muted hover:text-white" href="https://github.com/mosesjnr" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Digital products -->
+      <div class="reveal mt-28 pt-14 border-t border-white/10">
+        <div class="text-xs font-mono uppercase tracking-[.18em] text-accent">Beyond analytics</div>
+        <div class="mt-3 flex flex-col lg:flex-row lg:items-end justify-between gap-5">
+          <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Digital solutions & product engineering</h2>
+          <p class="text-muted max-w-xl text-sm leading-relaxed">
+            My portfolio also includes practical software projects where data, workflows, APIs and user experience come together.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <article class="reveal project-card border border-white/10 bg-white/[.025] rounded-3xl p-7 hover:border-white/25 transition">
+          <div class="text-xs font-mono text-accent">05 / HEALTHCARE</div>
+          <h3 class="mt-5 text-xl font-semibold">CareFlow — Telemedicine & Clinical Workflow</h3>
+          <p class="mt-3 text-sm text-muted leading-relaxed">A proposed workflow-focused telemedicine product covering appointments, clinical queues and doctor-patient communication.</p>
+          <div class="mt-5 text-xs text-muted">React • TypeScript • Node.js • Express • MySQL</div>
+        </article>
+
+        <article class="reveal project-card border border-white/10 bg-white/[.025] rounded-3xl p-7 hover:border-white/25 transition">
+          <div class="text-xs font-mono text-accent">06 / E-COMMERCE</div>
+          <h3 class="mt-5 text-xl font-semibold">ApexStore — Full-Stack E-Commerce</h3>
+          <p class="mt-3 text-sm text-muted leading-relaxed">A responsive commerce experience designed around product discovery, cart management and localized payment processing.</p>
+          <div class="mt-5 text-xs text-muted">Next.js • TypeScript • Tailwind CSS • Paystack</div>
+        </article>
+
+        <article class="reveal project-card border border-white/10 bg-white/[.025] rounded-3xl p-7 hover:border-white/25 transition">
+          <div class="text-xs font-mono text-accent">07 / COMMUNITY MEDIA</div>
+          <h3 class="mt-5 text-xl font-semibold">FaithHub — Church Management & Media</h3>
+          <p class="mt-3 text-sm text-muted leading-relaxed">A media and community portal concept for sermon archives, events, digital giving and location-based information.</p>
+          <div class="mt-5 text-xs text-muted">React • Firebase • YouTube API • Google Maps</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-y border-white/10 bg-white/[.02]">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-24 sm:py-32 grid lg:grid-cols-12 gap-14 items-start">
+        <div class="lg:col-span-5 reveal">
+          <div class="text-xs font-mono uppercase tracking-[.18em] text-accent">About</div>
+          <h2 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight">I connect analysis with action.</h2>
+        </div>
+
+        <div class="lg:col-span-7 reveal text-muted leading-relaxed">
+          <p>
+            My work sits at the intersection of data analysis, predictive modelling, technology and practical problem solving. I enjoy taking an unclear question, working through the data, identifying meaningful patterns and turning the result into something useful.
+          </p>
+          <p class="mt-6">
+            My earlier data projects cover loan eligibility, hotel booking cancellations, Lagos property rent prediction and wine quality classification. More recent software work extends that problem-solving approach into healthcare workflows, e-commerce and community media platforms.
+          </p>
+          <p class="mt-6">
+            I value clear thinking, structured workflows, maintainable technology and solutions that can be understood and used by the people they are intended to serve.
+          </p>
+
+          <div class="mt-10 grid sm:grid-cols-2 gap-4">
+            <div class="border border-white/10 rounded-2xl p-5 bg-black/10">
+              <div class="text-xs font-mono text-white">ANALYTICAL MINDSET</div>
+              <p class="mt-2 text-sm">EDA, modelling, feature relationships, evaluation and insight generation.</p>
+            </div>
+            <div class="border border-white/10 rounded-2xl p-5 bg-black/10">
+              <div class="text-xs font-mono text-white">OPERATIONS MINDSET</div>
+              <p class="mt-2 text-sm">Structured workflows, practical constraints, process thinking and useful outputs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="max-w-7xl mx-auto px-5 sm:px-8 py-24 sm:py-32">
+      <div class="reveal">
+        <div class="text-xs font-mono uppercase tracking-[.18em] text-accent">Capabilities</div>
+        <h2 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight">A practical technical toolkit.</h2>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="reveal border border-white/10 rounded-3xl p-7 bg-white/[.02]">
+          <div class="text-xs font-mono text-accent">01 / DATA</div>
+          <h3 class="mt-5 text-xl font-semibold">Data Science</h3>
+          <ul class="mt-5 space-y-2 text-sm text-muted">
+            <li>Python</li><li>Pandas & NumPy</li><li>Exploratory Data Analysis</li><li>Predictive modelling</li><li>Classification & regression</li><li>Model evaluation</li>
+          </ul>
+        </div>
+
+        <div class="reveal border border-white/10 rounded-3xl p-7 bg-white/[.02]">
+          <div class="text-xs font-mono text-accent">02 / VISUAL</div>
+          <h3 class="mt-5 text-xl font-semibold">Analytics & Visualisation</h3>
+          <ul class="mt-5 space-y-2 text-sm text-muted">
+            <li>Matplotlib</li><li>Feature analysis</li><li>Correlation analysis</li><li>Data storytelling</li><li>Insight communication</li><li>Decision-oriented reporting</li>
+          </ul>
+        </div>
+
+        <div class="reveal border border-white/10 rounded-3xl p-7 bg-white/[.02]">
+          <div class="text-xs font-mono text-accent">03 / ENGINEERING</div>
+          <h3 class="mt-5 text-xl font-semibold">Digital Engineering</h3>
+          <ul class="mt-5 space-y-2 text-sm text-muted">
+            <li>React / Next.js</li><li>TypeScript / JavaScript</li><li>Node.js / Express</li><li>REST APIs / FastAPI</li><li>MySQL / Firebase</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="reveal border border-white/10 rounded-3xl p-7 bg-white/[.02]">
+          <div class="text-xs font-mono text-accent">04 / OPERATIONS</div>
+          <h3 class="mt-5 text-xl font-semibold">Operations Thinking</h3>
+          <ul class="mt-5 space-y-2 text-sm text-muted">
+            <li>Problem decomposition</li><li>Workflow design</li><li>Requirements thinking</li><li>Process improvement</li><li>Cross-functional collaboration</li><li>Solution delivery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="border-y border-white/10 bg-white/[.02]">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-24 sm:py-32">
+        <div class="reveal max-w-2xl">
+          <div class="text-xs font-mono uppercase tracking-[.18em] text-accent">How I work</div>
+          <h2 class="mt-3 text-4xl sm:text-5xl font-semibold tracking-tight">From question to useful outcome.</h2>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="reveal p-6 rounded-3xl border border-white/10">
+            <div class="font-mono text-accent text-sm">01</div>
+            <h3 class="mt-5 font-semibold text-lg">Define</h3>
+            <p class="mt-2 text-sm text-muted leading-relaxed">Clarify the problem, objective, users, data and constraints.</p>
+          </div>
+          <div class="reveal p-6 rounded-3xl border border-white/10">
+            <div class="font-mono text-accent text-sm">02</div>
+            <h3 class="mt-5 font-semibold text-lg">Explore</h3>
+            <p class="mt-2 text-sm text-muted leading-relaxed">Clean, investigate and visualise information to reveal patterns.</p>
+          </div>
+          <div class="reveal p-6 rounded-3xl border border-white/10">
+            <div class="font-mono text-accent text-sm">03</div>
+            <h3 class="mt-5 font-semibold text-lg">Build</h3>
+            <p class="mt-2 text-sm text-muted leading-relaxed">Select an appropriate analytical or technical approach and build the solution.</p>
+          </div>
+          <div class="reveal p-6 rounded-3xl border border-white/10">
+            <div class="font-mono text-accent text-sm">04</div>
+            <h3 class="mt-5 font-semibold text-lg">Communicate</h3>
+            <p class="mt-2 text-sm text-muted leading-relaxed">Turn technical work into clear findings, usable outputs and next actions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-7xl mx-auto px-5 sm:px-8 py-24 sm:py-32">
+      <div class="reveal relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[.035] p-8 sm:p-14 lg:p-20">
+        <div class="absolute right-0 top-0 w-72 h-72 bg-accent/10 blur-3xl rounded-full"></div>
+        <div class="relative max-w-3xl">
+          <div class="text-xs font-mono uppercase tracking-[.18em] text-accent">Contact</div>
+          <h2 class="mt-4 text-4xl sm:text-6xl font-semibold tracking-tight">Let's turn a problem into something useful.</h2>
+          <p class="mt-6 text-muted text-lg leading-relaxed">
+            Open to conversations around data, analytics, digital products, operations and technology projects.
+          </p>
+
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="mailto:Mosekakwajnr@gmail.com" class="focus-ring px-6 py-3.5 rounded-full bg-accent text-ink font-bold text-sm hover:brightness-95 transition">Email Me</a>
+            <a href="https://github.com/mosesjnr" target="_blank" rel="noopener noreferrer"
+               class="focus-ring px-6 py-3.5 rounded-full border border-white/10 bg-black/10 font-semibold text-sm hover:bg-white/10 transition">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/moses-akwa" target="_blank" rel="noopener noreferrer"
+               class="focus-ring px-6 py-3.5 rounded-full border border-white/10 bg-black/10 font-semibold text-sm hover:bg-white/10 transition">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted">
+      <span>© 2026 Moses Akwa. All rights reserved.</span>
+      <span>Data • Operations • Digital Solutions</span>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky navbar
+    const navbar = document.getElementById('navbar');
+    const onScroll = () => navbar.classList.toggle('nav-scrolled', window.scrollY > 12);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Mobile navigation
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      menuBtn.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.setAttribute('aria-label', 'Open menu');
+    }));
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), Math.min(index * 60, 240));
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
